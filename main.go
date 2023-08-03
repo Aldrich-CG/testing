@@ -23,7 +23,7 @@ func main() {
 	time.AfterFunc(runDuration, stopFunc)
 
 	// 使用 time.Ticker 定时执行获取股票价格的操作
-	ticker := time.NewTicker(5 * time.Second)
+	ticker := time.NewTicker(10 * time.Second)
 	defer ticker.Stop()
 
 	for {
